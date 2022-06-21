@@ -19,6 +19,20 @@ tar xvfz prometheus-2.19.0.linux-amd64.tar.gz
 cd into the folder:
 prometheus-2.19.0.linux-amd64
 
+check version:
+prometheus --version
+
+cat prometheus.yml 
+
+start prometheus in terminal:
+./prometheus --config.file=./prometheus.yml
+
+check prometheus in browser using the public dns with ur port:
+ec2-107-20-73-211.compute-1.amazonaws.com:9090
+
+to modify the prometheus.yml file:
+nano prometheus.yml
+
 
 To remove:
 sudo cp prometheus-2.19.0.linux-amd64/prometheus /usr/local/bin
